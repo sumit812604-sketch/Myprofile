@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:20px;
+}
+
+.profile{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    animation:fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    color:#222;
+}
+
+h2{
+    color:#333;
+    border-bottom:2px solid #ddd;
+    padding-bottom:8px;
+}
+
+.photo{
+    display:block;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:20px auto;
+}
+
+.photo:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+}
+
+p,li{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.contact{
+    background:#eee;
+    padding:15px;
+    border-radius:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    margin:5px;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.call{
+    background:#333;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="profile">
+
+<h1>My Profile</h1>
+
+<img src="photo.jpg" alt="My Photo" class="photo">
+
+<h2>About Me</h2>
+
+<p>My name is Surya Kant.</p>
+
+<p>I am learning HTML and Computer Science.</p>
+
+<h2>Education</h2>
+
+<p>MA - Sociology</p>
+
+<h2>My Skills</h2>
+
+<ul>
+<li>HTML</li>
+<li>Computer Science</li>
+<li>MS Excel</li>
+</ul>
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>📱 Mobile: 7668674633</p>
+
+<a href="tel:7668674633" class="btn call">
+📞 Call Me
+</a>
+
+<a href="https://wa.me/917668674633" class="btn whatsapp">
+💬 WhatsApp Me
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
